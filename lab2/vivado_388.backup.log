@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Dec 09 13:21:28 2016
+# Process ID: 388
+# Current directory: F:/AX7020/vivado_project/02_HDMI_output_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5984 F:\AX7020\vivado_project\02_HDMI_output_test\HDMI_output_test.xpr
+# Log file: F:/AX7020/vivado_project/02_HDMI_output_test/vivado.log
+# Journal file: F:/AX7020/vivado_project/02_HDMI_output_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.xpr
+INFO: [Project 1-313] Project file moved from 'E:/AX7010/labs/HDMI_output_test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+set_property part xc7z020clg400-2 [current_project]
+WARNING: [IP_Flow 19-2162] IP 'video_pll' is locked:
+* Current project part 'xc7z020clg400-2' and the part 'xc7z010clg400-1' used to customize the IP 'video_pll' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 09 13:23:07 2016] Launched synth_1...
+Run output will be captured here: F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.runs/synth_1/runme.log
+[Fri Dec 09 13:23:07 2016] Launched impl_1...
+Run output will be captured here: F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.runs/impl_1/runme.log
+archive_project F:/AX7020/vivado_project/02_HDMI_output_test.xpr.zip -temp_dir F:/AX7020/vivado_project/02_HDMI_output_test/.Xil/Vivado-388-LUO -force -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'F:/AX7020/vivado_project/02_HDMI_output_test/.Xil/Vivado-388-LUO' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'video_pll' is locked:
+* Current project part 'xc7z020clg400-2' and the part 'xc7z010clg400-1' used to customize the IP 'video_pll' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+WARNING: [IP_Flow 19-2162] IP 'video_pll' is locked:
+* Current project part 'xc7z020clg400-2' and the part 'xc7z010clg400-1' used to customize the IP 'video_pll' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'video_pll' is locked:
+* Current project part 'xc7z020clg400-2' and the part 'xc7z010clg400-1' used to customize the IP 'video_pll' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'video_pll_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1213] Including run results for 'video_pll_impl_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source F:/AX7020/vivado_project/02_HDMI_output_test/.Xil/Vivado-388-LUO/PrjAr/_X_/HDMI_output_test.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 09 13:25:33 2016...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (F:/AX7020/vivado_project/02_HDMI_output_test.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 09 13:25:39 2016...

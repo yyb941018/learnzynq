@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Dec 09 13:25:30 2016
+# Process ID: 6112
+# Current directory: F:/AX7020/vivado_project/02_HDMI_output_test
+# Command line: wbtcv.exe -mode batch -source F:/AX7020/vivado_project/02_HDMI_output_test/.Xil/Vivado-388-LUO/PrjAr/_X_/HDMI_output_test.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: F:/AX7020/vivado_project/02_HDMI_output_test/webtalk.log
+# Journal file: F:/AX7020/vivado_project/02_HDMI_output_test\webtalk.jou
+#-----------------------------------------------------------
+source F:/AX7020/vivado_project/02_HDMI_output_test/.Xil/Vivado-388-LUO/PrjAr/_X_/HDMI_output_test.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 09 13:25:33 2016...

@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sat Dec 10 14:00:00 2016
+# Process ID: 4092
+# Current directory: F:/AX7020/vivado_project/02_HDMI_output_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10620 F:\AX7020\vivado_project\02_HDMI_output_test\HDMI_output_test.xpr
+# Log file: F:/AX7020/vivado_project/02_HDMI_output_test/vivado.log
+# Journal file: F:/AX7020/vivado_project/02_HDMI_output_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'video_pll' is locked:
+* Current project part 'xc7z020clg400-2' and the part 'xc7z010clg400-1' used to customize the IP 'video_pll' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 799.691 ; gain = 137.977
+report_ip_status -name ip_status 
+upgrade_ip -srcset video_pll -vlnv xilinx.com:ip:clk_wiz:5.2 [get_ips  video_pll]
+Upgrading 'video_pll'
+INFO: [Project 1-386] Moving file 'F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll/video_pll.xci' from fileset 'video_pll' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated video_pll to use current project options
+INFO: [IP_Flow 19-3471] Wrote upgrade log to 'f:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll/video_pll.upgrade_log'.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'video_pll'...
+convert_ips [get_files  F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll/video_pll.xci]
+INFO: [filemgmt 56-106] Converting IP 'video_pll' into core container format.
+INFO: [filemgmt 56-101] Creating core container 'F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll.xcix' for IP 'video_pll'
+export_ip_user_files -of_objects  [get_files  F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll/video_pll.xci] -sync -force -quiet
+set_property coreContainer.enable 1 [current_project]
+update_compile_order -fileset sources_1
+generate_target all [get_files  F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll/video_pll.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'video_pll'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'video_pll'...
+export_ip_user_files -of_objects [get_files F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll/video_pll.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll/video_pll.xci]
+launch_run -jobs 2 video_pll_synth_1
+[Sat Dec 10 14:00:40 2016] Launched video_pll_synth_1...
+Run output will be captured here: F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.runs/video_pll_synth_1/runme.log
+export_simulation -of_objects [get_files F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.srcs/sources_1/ip/video_pll/video_pll.xci] -directory F:/AX7020/vivado_project/02_HDMI_output_test/HDMI_output_test.ip_user_files/sim_scripts -force -quiet
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 10 14:01:37 2016...
