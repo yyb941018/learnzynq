@@ -1,0 +1,235 @@
+15:55:26 INFO  : Launching XSDB server: xsdb.bat -interactive F:\learnzynq\lab4\lab4.sdk\temp_xsdb_launch_script.tcl
+15:55:27 INFO  : XSDB server has started successfully.
+15:55:27 INFO  : Processing command line option -hwspec F:/learnzynq/lab4/lab4.sdk/system_wrapper.hdf.
+16:13:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:14:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:14:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:14:37 INFO  : FPGA configured successfully with bitstream "F:/learnzynq/lab4/lab4.runs/impl_1/system_wrapper.bit"
+16:14:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:14:57 INFO  : 'fpga -state' command is executed.
+16:14:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:14:58 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:14:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+16:14:58 INFO  : Hardware design information is loaded from 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/system.hdf'.
+16:14:59 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+16:14:59 INFO  : 'stop' command is executed.
+16:14:59 ERROR : AP transaction error, DAP status f0000021
+16:14:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+16:15:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:15:20 INFO  : 'fpga -state' command is executed.
+16:15:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:15:21 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:15:21 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+16:15:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+----------------End of Script----------------
+
+16:15:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:15:43 INFO  : 'fpga -state' command is executed.
+16:15:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:15:44 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:15:44 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+16:15:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+----------------End of Script----------------
+
+16:17:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:17:00 INFO  : 'fpga -state' command is executed.
+16:17:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:00 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:17:00 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+16:17:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+----------------End of Script----------------
+
+16:17:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:17:30 INFO  : 'fpga -state' command is executed.
+16:17:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:31 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:17:31 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+16:17:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+----------------End of Script----------------
+
+16:19:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:19:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:19:53 INFO  : FPGA configured successfully with bitstream "F:/learnzynq/lab4/lab4.runs/impl_1/system_wrapper.bit"
+16:20:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:20:03 INFO  : 'fpga -state' command is executed.
+16:20:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:03 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:20:04 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+16:20:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+----------------End of Script----------------
+
+16:20:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:20:20 INFO  : 'fpga -state' command is executed.
+16:20:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:20:20 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:20:21 ERROR : no targets found with "name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"". available targets:
+  1  APU (JTAG port open error. AP transaction error, DAP status f0000021)
+     2  ARM Cortex-A9 MPCore #0 (DEVICEEN is '0')
+     3  ARM Cortex-A9 MPCore #1 (DEVICEEN is '0')
+  4* xc7z020
+16:20:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+----------------End of Script----------------
+
+16:22:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:22:31 INFO  : FPGA configured successfully with bitstream "F:/learnzynq/lab4/lab4.runs/impl_1/system_wrapper.bit"
+16:22:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:22:36 INFO  : 'fpga -state' command is executed.
+16:22:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:22:37 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:22:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+16:22:37 INFO  : Hardware design information is loaded from 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/system.hdf'.
+16:22:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+16:22:38 INFO  : 'stop' command is executed.
+16:22:39 INFO  : 'ps7_init' command is executed.
+16:22:39 INFO  : 'ps7_post_config' command is executed.
+16:22:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:22:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:22:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:22:40 INFO  : The application 'F:/learnzynq/lab4/lab4.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:22:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow F:/learnzynq/lab4/lab4.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+16:22:40 INFO  : Memory regions updated for context APU
+16:22:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:22:40 INFO  : 'con' command is executed.
+16:22:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+16:23:20 INFO  : Disconnected from the channel tcfchan#1.
+16:23:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:23:21 INFO  : 'fpga -state' command is executed.
+16:23:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:23:21 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:23:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+16:23:23 INFO  : Hardware design information is loaded from 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/system.hdf'.
+16:23:24 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+16:23:24 INFO  : 'stop' command is executed.
+16:23:25 INFO  : 'ps7_init' command is executed.
+16:23:25 INFO  : 'ps7_post_config' command is executed.
+16:23:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:23:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:26 INFO  : The application 'F:/learnzynq/lab4/lab4.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:23:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow F:/learnzynq/lab4/lab4.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+16:23:26 INFO  : Memory regions updated for context APU
+16:23:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:23:27 INFO  : 'con' command is executed.
+16:23:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+16:24:35 INFO  : Disconnected from the channel tcfchan#2.
+16:24:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 1' command is executed.
+16:24:36 INFO  : 'fpga -state' command is executed.
+16:24:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:24:36 INFO  : Sourcing of 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:24:36 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+16:24:38 INFO  : Hardware design information is loaded from 'F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/system.hdf'.
+16:24:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+16:24:38 INFO  : 'stop' command is executed.
+16:24:39 INFO  : 'ps7_init' command is executed.
+16:24:39 INFO  : 'ps7_post_config' command is executed.
+16:24:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:24:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:24:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:24:40 INFO  : The application 'F:/learnzynq/lab4/lab4.sdk/pl_led_test/Debug/pl_led_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:24:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw F:/learnzynq/lab4/lab4.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow F:/learnzynq/lab4/lab4.sdk/pl_led_test/Debug/pl_led_test.elf
+----------------End of Script----------------
+
+16:24:41 INFO  : Memory regions updated for context APU
+16:24:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:24:41 INFO  : 'con' command is executed.
+16:24:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
