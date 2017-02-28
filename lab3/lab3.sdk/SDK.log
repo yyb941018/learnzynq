@@ -1,0 +1,57 @@
+15:14:37 INFO  : Launching XSDB server: xsdb.bat -interactive F:\learnzynq\lab3\lab3.sdk\temp_xsdb_launch_script.tcl
+15:14:39 INFO  : XSDB server has started successfully.
+15:14:41 INFO  : Processing command line option -hwspec F:/learnzynq/lab3/lab3.sdk/system_wrapper.hdf.
+15:20:58 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:21:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:21:34 INFO  : Sourcing of 'F:/learnzynq/lab3/lab3.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:21:34 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+15:21:34 INFO  : Hardware design information is loaded from 'F:/learnzynq/lab3/lab3.sdk/system_wrapper_hw_platform_0/system.hdf'.
+15:21:35 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0' command is executed.
+15:21:35 INFO  : 'stop' command is executed.
+15:21:36 INFO  : 'ps7_init' command is executed.
+15:21:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:21:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:37 INFO  : The application 'F:/learnzynq/lab3/lab3.sdk/helloword/Debug/helloword.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:21:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source F:/learnzynq/lab3/lab3.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+loadhw F:/learnzynq/lab3/lab3.sdk/system_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+stop
+ps7_init
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+dow F:/learnzynq/lab3/lab3.sdk/helloword/Debug/helloword.elf
+----------------End of Script----------------
+
+15:21:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:21:37 INFO  : 'con' command is executed.
+15:21:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210512180081"} -index 0
+con
+----------------End of Script----------------
+
+15:22:17 INFO  : Disconnected from the channel tcfchan#1.
+15:22:17 INFO  : ps7_init is completed.
+15:22:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:22:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:23:09 INFO  : Processor reset is completed for ps7_cortexa9_0
